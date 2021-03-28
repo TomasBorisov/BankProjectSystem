@@ -1,0 +1,45 @@
+﻿@{
+    ViewData["Title"] = "Bank Accounts Menu";
+}
+
+<div>
+
+
+    <div class="flex-sm-fill">
+        <style>
+            body {
+                padding-top: 30px;
+                padding-bottom: 20px;
+                background-image: url(https://mcdn.wallpapersafari.com/medium/68/93/hSEvPY.jpg);
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+                margin: auto;
+            }
+        </style>
+    </div>
+
+    <div class="col-md-4">
+        <form asp-action="CreateBankAccount">
+            <h4>Create BankAccount</h4>
+            <hr />
+            <div class="form-group">
+                <label for="IBAN">IBAN</label>
+                <input type="number" name="IBAN" placeholder="IBAN numbers..." class="form-control" />
+            </div>
+            <hr />
+            <div class="form-group">
+                <label for="FullName">Account holder</label>
+                <input type="text" name="FullName" placeholder="Full name..." class="form-control" />
+            </div>
+            <hr />
+            <div class="form-group">
+                <label for="CreationDate">Date of Creation</label>
+                <input type="text" name="CreationDate" placeholder="DD/MM/YY" class="form-control" />
+            </div>
+            <hr />
+            <button type="submit" class="btn btn-primary">Create BankAccount</button>
+        </form>
+
+    </div>
+</div>
